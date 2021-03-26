@@ -10,7 +10,7 @@
 Via Composer
 
 ``` bash
-$ composer require sevenlab/laravel-components
+$ composer require 7lab/laravel-components
 ```
 
 ## Usage

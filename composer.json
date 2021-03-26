@@ -1,16 +1,17 @@
 {
-    "name": "sevenlab/laravel-components",
+    "name": "7lab/laravel-components",
     "description": ":package_description",
     "license": "license",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Beau van Rouwendal",
+            "email": "beau@7lab.nl",
+            "homepage": "https://www.7lab.nl",
+            "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/sevenlab/laravel-components",
-    "keywords": ["Laravel", "LaravelComponents"],
+    "homepage": "https://github.com/7Lab/laravel-components",
+    "keywords": ["Laravel", "LaravelComponents", "7lab"],
     "require": {
         "illuminate/support": "~7|~8"
     },
