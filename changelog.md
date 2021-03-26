@@ -2,6 +2,29 @@
 
 All notable changes to `LaravelComponents` will be documented in this file.
 
+## Version 1.3
+
+### Added
+- Added 13 components
+    - Alert
+    - Avatar
+    - Badge
+    - Button
+        - Input
+        - checkbox
+        - Datepicker
+        - Group
+        - Radio
+        - Select
+        - Slim select
+        - Text
+        - Text Area
+        - Timepicker
+
+### Changed
+- Publish command to force overwrite the scss
+
+
 ## Version 1.2
 
 ### Added
