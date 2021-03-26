@@ -1,10 +1,9 @@
 @props([
-'type',
-'message',
+    'type',
 ])
 
 <div>
     <div class="alert alert-{{ $type }}" role="alert">
-        {{ $message }}
+        {{ $slot }}
     </div>
 </div>
