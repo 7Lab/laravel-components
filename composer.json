@@ -1,7 +1,7 @@
 {
     "name": "7lab/laravel-components",
-    "description": ":package_description",
-    "license": "license",
+    "description": "A component package for 7lab",
+    "license": "MIT",
     "authors": [
         {
             "name": "Beau van Rouwendal",
