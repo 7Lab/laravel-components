@@ -2,8 +2,6 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
 
 ## Installation
 
@@ -13,7 +11,31 @@ Via Composer
 $ composer require 7lab/laravel-components
 ```
 
-## Usage
+Run the following command to publish the styles to the scss directory
+``` bash
+$ php artisan components:publish
+```
+
+Add the following code to you webpack.mix.js. Located in the root of your laravel project.
+```javascript
+mix.sass('resources/scss/7lab/app.scss', 'public/css/components.css');
+```
+
+And include the css in you blade files
+```html
+<link rel="stylesheet" href="{{ asset('css/components.css') }}">
+```
+
+## Updating
+To update the components, you can update the package with 
+``` bash
+$ composer update 7lab/laravel-components
+```
+
+To get the latest styles, we strongly recommend to make a backup of the current scss files located in `resources/scss/7lab`. You can update the styles with
+``` bash
+$ php artisan components:publish
+```
 
 ## Change log
 
@@ -27,14 +49,8 @@ If you discover any security related issues, please email author email instead o
 
 license. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/sevenlab/laravel-components.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/sevenlab/laravel-components.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/sevenlab/laravel-components/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-version]: https://img.shields.io/packagist/v/7lab/laravel-components.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/7lab/laravel-components.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/sevenlab/laravel-components
-[link-downloads]: https://packagist.org/packages/sevenlab/laravel-components
-[link-travis]: https://travis-ci.org/sevenlab/laravel-components
-[link-styleci]: https://styleci.io/repos/12345678
-[link-author]: https://github.com/sevenlab
-[link-contributors]: ../../contributors
+[link-packagist]: https://packagist.org/packages/7lab/laravel-components
+[link-downloads]: https://packagist.org/packages/7lab/laravel-components
