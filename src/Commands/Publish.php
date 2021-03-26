@@ -51,7 +51,7 @@ class Publish extends Command
 
         $this->call('vendor:publish', [
             '--tag' => '7lab.components.styles',
-            '--force'
+            '--force' => true
         ]);
 
         return 0;
